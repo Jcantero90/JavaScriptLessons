@@ -80,3 +80,35 @@ console.log(!true);
  */
 
 console.log( 2 > 3 ? 'El número es mayor' : 'El número es menor'); // es un If/Else, aquí lanza que 2 es menor que 3. 
+
+/**
+ * Operador de desestructuración
+ */
+
+var persona = {
+    nombre: 'nom1',
+    apell: 'apellido'
+}
+
+var {nombre} = persona
+console.log(nombre); //Estoy sacando el nombre de un objeto. 
+
+// Desectructuración de Arrays. 
+var arrayDesestructurado = [1,"Casilla 1",3,4,"String"]
+var arrayCasilla1 = arrayDesestructurado[1]
+console.log(arrayCasilla1);
+
+var [casilla1, casilla2] = arrayDesestructurado //Llamamos a la celda 0 y 1 con nombres de variables
+console.log(casilla1); //al imprimirla por pantalla, llamará a la casilla 0.
+console.log(casilla2); //al imprimirla por pantalla, llamará a la casilla 1.
+
+// Llamar a los datos de su interior en vez de al objeto completo. 
+var ObjetoConDatos = {
+    dato1 : "Dato1",
+    dato2 : "Dato2"
+}
+console.log(ObjetoConDatos.dato1);
+console.log(ObjetoConDatos['dato2']);
+
+//Como ver el tipo de dato de un valor:
+console.log(typeof 'Esto es un String');

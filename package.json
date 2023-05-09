@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HolaMundo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jcantero90/JavaScriptLessons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jcantero90/JavaScriptLessons/issues"
+  },
+  "homepage": "https://github.com/Jcantero90/JavaScriptLessons#readme",
+  "type": "module"
+}
+
+
