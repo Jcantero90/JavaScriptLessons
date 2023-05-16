@@ -10,13 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/Jcantero90/JavaScriptLessons.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jcantero90/JavaScriptLessons/issues"
   },
   "homepage": "https://github.com/Jcantero90/JavaScriptLessons#readme",
-  "type": "module"
+  "type":"module"
 }
-
-
