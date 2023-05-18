@@ -17,5 +17,8 @@
     "url": "https://github.com/Jcantero90/JavaScriptLessons/issues"
   },
   "homepage": "https://github.com/Jcantero90/JavaScriptLessons#readme",
-  "type":"module"
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
 }

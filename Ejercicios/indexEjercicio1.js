@@ -24,7 +24,11 @@ do {
   console.log("opcion 4: cambiar el día de la semana If/Else ");
   console.log("Opcion 5: calcular los gastos de envio");
   console.log("Opcion 6: tabla multiplicar del 2 al 12");
-  console.log("Opcion 7: tabla multiplicar del 13 al 24");
+  console.log("Opcion 7: Indica el Factorial de un número");
+  console.log("Opcion 8: Devolver cadena de caracteres en mayúscula");
+  console.log("Opcion 9: Devolver el resultado de la suma entre los números primero y último");
+  console.log("Opcion 10: Devolver el resultado de la suma de una matriz");
+  console.log("Opcion 11: Devolver una cadena de caracteres con doble letra");
 
   rl.question("Ingresa Tu opcion: ", (opcion) => {
     op = parseInt(opcion);
@@ -69,10 +73,67 @@ do {
       case 6:
         herramienta.TablaMultiplicarFor();
         break;
+      case 7:
+        rl.question("Indica el factorial de un número: ", (factorial) => {
+          console.log(
+            `El factorial de ${factorial} es ${herramienta.Ejercicio1(
+              factorial
+            )}`
+          );
+          rl.close();
+        });
+      case 8:
+        rl.question(
+          "Indica la cadena de caracteres en minúscula para cambiarla a mayúscula: ",
+          (upper) => {
+            console.log(
+              `la cadena ${upper} en mayúscula es ${herramienta.Ejercicio2(
+                upper
+              )}`
+            );
+            rl.close();
+          }
+        );
+      case 9:
+        rl.question("Idica el primer número: ", (num1) => {
+          rl.question("Idica el primer número: ", (num2) => {
+            var x = parseInt(num1);
+            var y = parseInt(num2);
+            console.log(`El resultado es ${herramienta.Ejercicio3(x, y)}`);
+            rl.close();
+          });
+        });
+        break;
+      case 10:
+        rl.question(
+          "Ingresa la matriz a calcular, los números han de estar separadas con un especio entre ellos: ",
+          (matriz) => {
+            console.log(
+              `El resultado de la suma de todos los elementos es ${herramienta.Ejercicio4(
+                matriz
+              )}`
+            );
+            rl.close();
+          }
+        );
+        break;
+      case 11:
+        rl.question(
+          "Ingresa la cadena de caracteres Random: ",
+          (cadenaCaracteres) => {
+            console.log(
+              `El resultado de la suma de todos los elementos es ${herramienta.Ejercicio5(
+                cadenaCaracteres
+              )}`
+            );
+            rl.close();
+          }
+        );
+        break;
       default:
         console.log("Error!");
         rl.close();
         break;
     }
   });
-} while ((op >= 6));
+} while (op >= 12);

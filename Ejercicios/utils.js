@@ -1,10 +1,3 @@
-import readline, { clearScreenDown } from "readline";
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
 class utils {
   /**
    * Ejercicios Operadores.
@@ -86,28 +79,65 @@ class utils {
   }
 
   /**
-   * Ejercicios ciclos. 
+   * Ejercicios ciclos.
    */
 
-  TablaMultiplicarFor(){
-    for(let x = 2; x <=12; x++){
-        for(let y = 1; y <= 10 ; y++){
-            var resultado = x * y
-            console.log(`Tabla del ${x}: ${x} X ${y} = ${resultado}`);
-        }
+  TablaMultiplicarFor() {
+    for (let x = 2; x <= 12; x++) {
+      for (let y = 1; y <= 10; y++) {
+        var resultado = x * y;
+        console.log(`Tabla del ${x}: ${x} X ${y} = ${resultado}`);
+      }
     }
   }
-  TablaMultiplicarDoWhile(){
+  TablaMultiplicarDoWhile() {
     var resultado;
-    do{
+    do {
       console.log(resultado);
-        for(let x = 2; x <=12; x++){
-            for(let y = 1; y <= 10 ; y++){
-                resultado = x * y
-                console.log(`Tabla del ${x}: ${x} X ${y} = ${resultado}`);
-            }
+      for (let x = 2; x <= 12; x++) {
+        for (let y = 1; y <= 10; y++) {
+          resultado = x * y;
+          console.log(`Tabla del ${x}: ${x} X ${y} = ${resultado}`);
         }
-    } while(!(resultado >= 120))
+      }
+    } while (!(resultado >= 120));
+  }
+
+  Ejercicio1(factorial) {
+    var resultadoFactorial = 1;
+    for (let x = 1; x <= factorial; x++) {
+      var resultadoFactorial = resultadoFactorial * x;
+    }
+    return resultadoFactorial;
+  }
+  Ejercicio2(upper) {
+    var upperCAse = upper.toLocaleUpperCase();
+    return upperCAse;
+  }
+  Ejercicio3(data1, data2) {
+    var resultadofinal = 0;
+    for (let x = data1 + 1; x < data2; x++) {
+      resultadofinal = resultadofinal + x;
+    }
+    return resultadofinal;
+  }
+  Ejercicio4(matriz) {
+    // var resultadoFactorial =  Array.from(matriz) //No me gusta. 
+    var prueba = matriz.split(' ')
+    console.log(prueba);
+    var resultadofinal = 0;
+     for (let x = 0; x < prueba.length; x++) {
+      resultadofinal = resultadofinal + parseInt(prueba[x])
+    }
+    return resultadofinal
+  }
+  Ejercicio5(cadenaCaracteres){
+    var cadenaToArray =  Array.from(cadenaCaracteres)
+    var stringSuperGuapoDeLaMuerte = [];
+    for (let x = 0; x < cadenaToArray.length; x++){
+      stringSuperGuapoDeLaMuerte = stringSuperGuapoDeLaMuerte + cadenaToArray[x] + cadenaToArray[x]
+    }
+    return stringSuperGuapoDeLaMuerte
   }
 }
 
