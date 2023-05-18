@@ -26,7 +26,9 @@ do {
   console.log("Opcion 6: tabla multiplicar del 2 al 12");
   console.log("Opcion 7: Indica el Factorial de un número");
   console.log("Opcion 8: Devolver cadena de caracteres en mayúscula");
-  console.log("Opcion 9: Devolver el resultado de la suma entre los números primero y último");
+  console.log(
+    "Opcion 9: Devolver el resultado de la suma entre los números primero y último"
+  );
   console.log("Opcion 10: Devolver el resultado de la suma de una matriz");
   console.log("Opcion 11: Devolver una cadena de caracteres con doble letra");
 
